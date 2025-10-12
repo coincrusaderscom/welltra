@@ -1,0 +1,5 @@
+{
+  "name": "Wellness Tracker: Weight & BMI",
+  "description": "A modern web application to record your daily weight and BMI, visualize your progress with charts, set goals, and receive daily motivation powered by Gemini.",
+  "requestFramePermissions": []
+}
