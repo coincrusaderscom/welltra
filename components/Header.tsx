@@ -17,11 +17,19 @@ const Header: React.FC<HeaderProps> = ({ title, onAddClick, showAddButton, theme
   };
 
   return (
-    <header className="container mx-auto p-4 md:p-6">
+    <header className="max-w-4xl mx-auto p-4 md:p-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
-          {title}
-        </h1>
+        {/* START: Changes for the logo */}
+        <div className="flex items-center gap-3">
+          <img 
+            src="/logo.png" 
+            alt="App Logo" 
+            className="h-6 md:h-8 w-auto" 
+          />
+          
+        </div>
+        {/* END: Changes for the logo */}
+
         <div className="flex items-center gap-3">
           <button 
             onClick={toggleTheme}
