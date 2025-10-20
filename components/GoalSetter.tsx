@@ -31,7 +31,7 @@ const BottomNav: React.FC<BottomNavProps> = ({ activeTab, setActiveTab }) => {
                             onClick={() => setActiveTab(item.name)}
                             className="flex flex-col items-center justify-center gap-1 text-xs font-medium w-full h-full transition-colors"
                         >
-                            <IconComponent className={isActive ? 'text-accent-green' : 'text-gray-500 dark:text-gray-400'} />
+                            <IconComponent className={isActive ? 'text-accent-green' : 'text-gray-500 dark:text-gray-400'} strokeWidth={1.0}/>
                             <span className={isActive ? 'text-accent-green' : 'text-gray-500 dark:text-gray-400'}>
                                 {item.name}
                             </span>

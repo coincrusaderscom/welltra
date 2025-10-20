@@ -33,19 +33,19 @@ const Dashboard: React.FC<DashboardProps> = ({ latestWeight, bmi, goalWeight, we
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <StatCard 
-        icon={<Scale size={32} className="text-accent-green" />}
+        icon={<Scale size={32} className="text-accent-green" strokeWidth={1.0}/>}
         title="Current Weight"
         value={latestWeight?.toFixed(1) ?? '--'}
         unit="kg"
       />
       <StatCard 
-        icon={<Gauge size={32} className="text-accent-green" />}
+        icon={<Gauge size={32} className="text-accent-green" strokeWidth={1.0}/>}
         title="Current BMI"
         value={bmi?.toFixed(1) ?? '--'}
       />
       {goalWeight !== null && weightToGo !== null && (
          <StatCard 
-            icon={<Trophy size={32} className="text-accent-green" />}
+            icon={<Trophy size={32} className="text-accent-green" strokeWidth={1.0}/>}
             title={weightToGo > 0 ? "Kilograms to Go" : "Goal Surpassed By"}
             value={Math.abs(weightToGo).toFixed(1)}
             unit="kg"
